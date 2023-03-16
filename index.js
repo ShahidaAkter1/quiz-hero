@@ -61,7 +61,6 @@ const displayQuiz = (data) => {
 
   data.forEach((quiz, i) => {
     quiz.innerHTML +=`
-    
     <div class="m-3 py-3 px-4 shadow-sm rounded">
   <div class="flex items-center">
     <div class="h-8 w-8 bg-green-300 rounded-full flex justify-center items-center text-green-800 mr-3">
@@ -187,4 +186,15 @@ document.querySelector('#submit').addEventListener('click', () =>{
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
+});
+
+
+
+// blog page
+
+//Blog button
+document.getElementById('btn-blog').addEventListener('click',function(){
+  window.location.href='blog.html';
+  // window.open(
+  //     "blog.html", "_blank");//new tab open
 });
